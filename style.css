@@ -10,7 +10,7 @@ body{
     align-items: center;
     height: 100vh;
     background-image: linear-gradient(to bottom,
-    green 20%,lightgrey 20%);
+    #009688 20%,lightgrey 20%);
 }
 
 .content{
@@ -28,10 +28,15 @@ body{
     width: 60%;
  }
 
+nav{
+    background-color: #eaeaea;
+}
+
  .nav1{
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 90px;
+
  }
 
  nav i{
@@ -58,8 +63,7 @@ body{
 
  .notification{
     display: flex;
-    background-color: aqua;
-    margin-top: 30px;
+    background-color: #8edafc;
     padding: 10px;
  }
 
@@ -93,6 +97,7 @@ body{
 
  .utentex{
     display: flex;
+    border-top: 1px solid rgb(225, 213, 213);
  }
 
  .nomeutente p{
@@ -106,7 +111,7 @@ body{
     display: flex;
     justify-content: space-between;
     height: 90px;
-    background-color: white;
+    
  }
 
  .chat{
@@ -122,11 +127,11 @@ body{
     justify-content: center;
     align-items: center;
     align-self: flex-end;
-    border: solid 1px rgb(140, 190, 67);
+    border: solid 1px #d5f9ba;
     height: 35px;
     width: 180px;
      margin-right: 50px;
-     background-color: rgb(147, 188, 85);
+     background-color:#d5f9ba;
      margin-top: 5px;
      
  }
