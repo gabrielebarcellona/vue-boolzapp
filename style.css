@@ -9,10 +9,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(to bottom,
+    green 20%,lightgrey 20%);
 }
 
 .content{
-    border: solid grey 1px;
+    border: solid rgb(0, 0, 0) 1px;
     display: flex;
     height: 95%;
     width: 70%;
@@ -106,7 +108,7 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url(../vue-boolzapp/img/mine.jpg);
-    height: 75vh;
+    height: 75%;
     width: 100%;
  }
 
