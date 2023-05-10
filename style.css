@@ -164,3 +164,7 @@ nav{
     width: 80%;
     padding: 10px;
 }
+
+.barra input{
+    width: 500px;
+}
