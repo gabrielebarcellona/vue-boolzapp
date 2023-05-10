@@ -86,6 +86,11 @@ body{
     color: grey;
  }
 
+ .search{
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+
  .utentex{
     display: flex;
  }
@@ -142,6 +147,7 @@ body{
 
  .footer{
     display: flex;
+    align-items: center;
     height: 50px;
     background-color: rgb(223, 207, 207);
  }
