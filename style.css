@@ -110,7 +110,7 @@ nav{
  .nav2{
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 15%;
     
  }
 
@@ -118,7 +118,7 @@ nav{
     display: flex;
     flex-direction: column;
     background-image: url(../vue-boolzapp/img/mine.jpg);
-    height: 75%;
+    height: 70%;
     width: 100%;
  }
 
@@ -153,8 +153,8 @@ nav{
  .footer{
     display: flex;
     align-items: center;
-    height: 50px;
-    background-color: rgb(223, 207, 207);
+    height: 15%;
+    background-color:#f3eeea;
  }
 .item2{
     width: 10%;
