@@ -10,7 +10,7 @@ body{
     align-items: center;
     height: 100vh;
     background-image: linear-gradient(to bottom,
-    #009688 20%,lightgrey 20%);
+    #009688 20%,#d8dbd3 20%);
 }
 
 .content{
@@ -98,6 +98,11 @@ nav{
  .utentex{
     display: flex;
     border-top: 1px solid rgb(225, 213, 213);
+ }
+
+ .scroll-container{
+    overflow: scroll;
+    height: 400px;
  }
 
  .nomeutente p{

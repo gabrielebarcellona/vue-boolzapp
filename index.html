@@ -17,7 +17,7 @@
 <body>
     <div class="content">
         <div class="content1">
-            <div class="container1">
+            <div class="container">
                 <nav class="nav1">
                     <div class="utente">
                         <img src="img/avatar_io.jpg" alt="">
@@ -41,20 +41,22 @@
                 <div class="search">
                     <input class="form-control me-2" type="search" placeholder="cerca o trova una nuova chat"
                         aria-label="Search">
-
                 </div>
-                <div class="utentex">
-                    <div class="utente">
-                        <img src="img/avatar_1.jpg" alt="">
-                    </div>
-                    <div class="nomeutente">
-                        <h3>michele</h3>
-                        <p>ciao sono la descrizione di michele</p>
-                    </div>
-                    <div class="orariomessaggio">17:49</div>
 
+                <div class="scroll-container">
+                    <div class="utentex" v-for="element in contacts">
+                        <div class="utente">
+                            <img :src="element.avatar" alt="">
+                        </div>
+                        <div class="nomeutente">
+                            <h3>{{element.name}}</h3>
+                            <p>{{element.messages[0].message}}</p>
+                        </div>
+                        <div class="orariomessaggio">17:49</div>
+
+                    </div>
                 </div>
-                <div class="utentex">
+                <!-- <div class="utentex">
                     <div class="utente">
                         <img src="img/avatar_8.jpg" alt="">
                     </div>
@@ -97,7 +99,7 @@
                     </div>
                     <div class="orariomessaggio">17:49</div>
 
-                </div>
+                </div> -->
             </div>
         </div>
 
