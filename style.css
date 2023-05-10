@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    border: solid grey 1px;
+    display: flex;
+    height: 95%;
+    width: 70%;
+}
+.content1{
+    background-color: white;
+  width: 40%;
+}
+
+.content2{
+    width: 60%;
+ }
+
+ .nav1{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+ }
+
+ nav i{
+    opacity: 40%;
+ }
+
+.utente{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 25px 25px;
+   
+}
+
+ .utente img{
+    width: 100%;
+    border-radius: 50px;
+ }
+ 
+ .item i {
+    padding: 5px;
+    margin-top: 25px;
+ }
+
+ .notification{
+    display: flex;
+    background-color: aqua;
+    margin-top: 30px;
+    padding: 10px;
+ }
+
+ .notification p{
+    padding-inline: 10px;
+ }
+
+ .parol{
+    text-decoration: underline;
+    opacity: 40%;
+ }
+
+ .alarm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+ }
+
+ .alarm i {
+    color: grey;
+ }
+
+ .utentex{
+    display: flex;
+ }
+
+ .nomeutente p{
+    opacity: 40%;
+ }
+ .orariomessaggio{
+    opacity: 40%;
+ }
+
+ .nav2{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+ }
+
+ .chat{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../vue-boolzapp/img/mine.jpg);
+    height: 75vh;
+    width: 100%;
+ }
+
+ .messaggio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    border: solid 1px rgb(140, 190, 67);
+    height: 35px;
+    width: 180px;
+     margin-right: 50px;
+     background-color: rgb(147, 188, 85);
+     margin-top: 5px;
+     
+ }
+ .risposta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    border: solid 1px rgb(255, 255, 255);
+    height: 35px;
+    width: 180px;
+     margin-right: 50px;
+     margin-left: 30px;
+     background-color: white;
+     border-radius: 5px 5px;
+     
+ }
+
+ .footer{
+    display: flex;
+    height: 50px;
+    background-color: rgb(223, 207, 207);
+ }
+.item2{
+    width: 10%;
+    padding: 10px;
+}
+.barra{
+    width: 80%;
+    padding: 10px;
+}
