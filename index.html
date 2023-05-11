@@ -52,7 +52,7 @@
                             <h3>{{element.name}}</h3>
                             <p>{{element.messages[0].message}}</p>
                         </div>
-                        <div class="orariomessaggio">17:49</div>
+                        <div class="orariomessaggio">{{element.messages[0].date}}</div>
 
                     </div>
                 </div>
@@ -120,7 +120,7 @@
 
             <div class="chat" v-for="element in contacts">
                 <div class="messaggio">{{element.messages[0].message}} 
-                    <div class="data-messaggio"></div>
+                    <div class="data-messaggio">{{element.messages[0].date}}</div>
                 </div>
             
                 <div class="risposta">{{element.messages[0].message}}</div>
