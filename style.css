@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+html{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -102,7 +107,8 @@ nav{
 
  .scroll-container{
     overflow: scroll;
-    height: 400px;
+    height: 370px;
+
  }
 
  .nomeutente p{
@@ -125,31 +131,37 @@ nav{
     background-image: url(../vue-boolzapp/img/mine.jpg);
     height: 70%;
     width: 100%;
+    padding: 40px;
  }
 
  .messaggio{
+   position: relative;
+   max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
+    gap: 2rem 3rem;
     border: solid 1px #d5f9ba;
-    height: 35px;
-    width: 180px;
-     margin-right: 50px;
      background-color:#d5f9ba;
-     margin-top: 5px;
-     
+     border-radius: 5px;
  }
+
+.data-messaggio{
+   position: absolute;
+   font-size: 10px;
+   bottom: 1px;
+   right: 5px;
+   opacity: 40%;
+}
+
  .risposta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-start;
-    border: solid 1px rgb(255, 255, 255);
-    height: 35px;
-    width: 180px;
-     margin-right: 50px;
-     margin-left: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-self: flex-start;
+     max-width: 300px;
+     border: solid 1px rgb(255, 255, 255);
      background-color: white;
      border-radius: 5px 5px;
      

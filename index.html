@@ -118,10 +118,12 @@
                 </div>
             </nav>
 
-            <div class="chat">
-                <div class="messaggio">ciao caro </div>
-                <div class="messaggio">ciao caro </div>
-                <div class="risposta">ciao carissima come va?</div>
+            <div class="chat" v-for="element in contacts">
+                <div class="messaggio">{{element.messages[0].message}} 
+                    <div class="data-messaggio"></div>
+                </div>
+            
+                <div class="risposta">{{element.messages[0].message}}</div>
             </div>
 
             <div class="footer">
