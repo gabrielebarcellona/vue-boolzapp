@@ -2,6 +2,7 @@
 const app = Vue.createApp({
     data(){
         return{
+            activeIndex : 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -166,6 +167,11 @@ const app = Vue.createApp({
                 }
             ]
             
+        }
+    },
+    methods : {
+        setactiveIndex(i){
+            this.activeIndex = i
         }
     }
 })

@@ -44,7 +44,9 @@
                 </div>
 
                 <div class="scroll-container">
-                    <div class="utentex" v-for="element in contacts">
+                    <div class="utentex" v-for="(element,i) in contacts"
+                    :class="{active: i == activeIndex}"
+                    @click="setactiveIndex(i)">
                         <div class="utente">
                             <img :src="element.avatar" alt="">
                         </div>
@@ -117,13 +119,18 @@
                     <i class="fa-solid fa-list"></i>
                 </div>
             </nav>
-
-            <div class="chat" v-for="element in contacts">
-                <div class="messaggio">{{element.messages[0].message}} 
-                    <div class="data-messaggio">{{element.messages[0].date}}</div>
+           
+            <div class="chat">
+                <div class="messaggio" v-for="element in contacts[activeIndex].messages"
+                :class="element.status == 'sent' ? 'sent' :'received'">
+                <div class="text">  {{element.message}}</div>
+                  
+                    <div class="data-messaggio">
+                        {{element.date}}
+                    </div>
                 </div>
             
-                <div class="risposta">{{element.messages[0].message}}</div>
+                
             </div>
 
             <div class="footer">
@@ -131,7 +138,7 @@
                 <div class="barra"><input type="search" placeholder="invia un messaggio"></div>
                 <div class="item2"><i class="fa-solid fa-microphone"></i></div>
             </div>
-
+        
         </div>
 
 

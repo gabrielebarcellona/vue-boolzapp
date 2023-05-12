@@ -146,17 +146,26 @@ nav{
     border: solid 1px #d5f9ba;
      background-color:#d5f9ba;
      border-radius: 5px;
+     margin-top: 20px;
  }
-
+ 
+ .text{
+   margin-bottom: 20px;
+ }
 .data-messaggio{
    position: absolute;
    font-size: 10px;
    bottom: 1px;
-   right: 5px;
+   right: 3px;
    opacity: 40%;
 }
 
- .risposta{
+.active{
+   background-color: lightgrey;
+   cursor: pointer;
+}
+
+ .received{
      display: flex;
      justify-content: center;
      align-items: center;
