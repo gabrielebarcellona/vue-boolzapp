@@ -4,7 +4,7 @@ const app = Vue.createApp({
         return{
             activeIndex : 0,
             messaggio : '',
-            messaggioRicevuto : '',
+            messaggioRicevuto : 'OK!',
             contacts: [
                 {
                     name: 'Michele',
