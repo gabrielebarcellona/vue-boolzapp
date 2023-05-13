@@ -3,6 +3,8 @@ const app = Vue.createApp({
     data(){
         return{
             activeIndex : 0,
+            messaggio : '',
+            messaggioRicevuto : '',
             contacts: [
                 {
                     name: 'Michele',
@@ -172,8 +174,21 @@ const app = Vue.createApp({
     methods : {
         setactiveIndex(i){
             this.activeIndex = i
-        }
+        },
+        sendmessage(){
+            let now = new date();
+        this.messaggio.date = now.getHours() + ':' + now.getMinutes();
+        this.messaggioRicevuto.date = now.getHours() + ':' + now.getMinutes();
+        this.contacts[this.activeIndex].messages.push(this.messaggio);
+        
+
+
+        setTimeout(()=> {
+            this.contacts[this.activeIndex].messages.push(this.messaggioRicevuto)
+        },2000)
     }
+}
+    
 })
 
 app.mount('.content')

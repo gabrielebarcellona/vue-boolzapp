@@ -92,7 +92,7 @@ nav{
  }
 
  .alarm i {
-    color: grey;
+    color: #8edafc;
  }
 
  .search{
@@ -124,6 +124,7 @@ nav{
     height: 15%;
     
  }
+
 
  .chat{
     display: flex;
