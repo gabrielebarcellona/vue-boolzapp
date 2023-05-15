@@ -180,6 +180,7 @@ const app = Vue.createApp({
         this.messaggio.date = now.getHours() + ':' + now.getMinutes();
         this.messaggioRicevuto.date = now.getHours() + ':' + now.getMinutes();
         this.contacts[this.activeIndex].messages.push(this.messaggio);
+        this.contacts[this.activeIndex].messages.push(this.messaggioRicevuto);
         
 
 
