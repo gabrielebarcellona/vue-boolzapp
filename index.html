@@ -39,14 +39,14 @@
                 </div>
 
                 <div class="search">
-                    <input class="form-control me-2" type="search" placeholder="cerca o trova una nuova chat"
+                    <input class="form-control me-2" type="search" placeholder="cerca o trova una nuova chat " v-model="searchStr"
                         aria-label="Search">
                 </div>
 
                 <div class="scroll-container">
-                    <div class="utentex" v-for="(element,i) in contacts"
-                    :class="{active: i == activeIndex}"
-                    @click="setactiveIndex(i)">
+                    <div class="utentex" v-for="(element,i) in filteredcontacts"
+                    :class="{active: element == contacts[activeIndex]}"
+                    @click="setactiveIndex(element)">
                         <div class="utente">
                             <img :src="element.avatar" alt="">
                         </div>
@@ -139,7 +139,7 @@
 
             <div class="footer">
                 <div class="item2"><i class="fa-solid fa-face-smile"></i></div>
-                <div class="barra"><input type="search" placeholder="invia un messaggio"  @keyup.enter="sendmessage"></div>
+                <div class="barra"><input type="search" placeholder="invia un messaggio"   v-model="messaggio" @keyup.enter="sendmessage"></div>
                 <div class="item2"><i class="fa-solid fa-microphone"></i></div>
             </div>
         

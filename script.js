@@ -5,6 +5,7 @@ const app = Vue.createApp({
             activeIndex : 0,
             messaggio : '',
             messaggioRicevuto : 'OK!',
+            searchStr : '',
             contacts: [
                 {
                     name: 'Michele',
@@ -172,11 +173,11 @@ const app = Vue.createApp({
         }
     },
     methods : {
-        setactiveIndex(i){
-            this.activeIndex = i
+        setactiveIndex(element){
+            this.activeIndex = this.contacts.indexOf(element) 
         },
         sendmessage(){
-            let now = new date();
+            let now = new Date();
         this.messaggio.date = now.getHours() + ':' + now.getMinutes();
         this.messaggioRicevuto.date = now.getHours() + ':' + now.getMinutes();
         this.contacts[this.activeIndex].messages.push(this.messaggio);
@@ -185,8 +186,14 @@ const app = Vue.createApp({
 
 
         setTimeout(()=> {
-            this.contacts[this.activeIndex].messages.push(this.messaggioRicevuto)
-        },2000)
+            this.contacts[this.activeIndex].push(this.messaggioRicevuto)
+        },1000)
+    }
+},
+
+computed: {
+    filteredcontacts(){
+       return this.contacts.filter(element=>element.name.includes(this.searchStr));
     }
 }
     
